@@ -1,0 +1,394 @@
+h1, h2 {
+    font-family: 'Bayon', sans-serif;
+}
+
+header, main, .header2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body, .bd2 {
+    margin: 0;
+}
+
+.topnav {
+    background-color:rgba(213, 16, 16, 83%);
+    overflow: hidden;
+  }
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .active {
+    background-color: black;
+    font-weight: bold;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255,201,11,100%);
+    color: black;
+    font-weight: bold;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f7f7f7;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+.grid img {
+    max-width: 100%;
+    display: block;
+    border-radius: 30px;
+    border-top:7px solid rgba(255,201,11,100%);
+    border-bottom:7px solid rgba(255,201,11,100%);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(213, 16, 16, 83%);
+    padding: 20px;
+    font-size: 30pt;
+}
+
+
+body {
+    background-image: url(immagini/u.jpg);
+    box-shadow: inset 100px 100px 250px black;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+main {
+    padding: 120px 20px 60px 20px;
+}
+
+.grid {
+    column-count: 3;
+    column-gap: 16px;
+    gap: 20px;
+    padding:20px 20px 0px 20px;
+}
+
+.grid a {
+    position: relative;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid a:hover:before {
+    content:"";
+    background-color: rgba(0, 0, 0, 0.558);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.grid a span {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.grid a:hover span {
+    display: block;
+}
+
+.grid img {
+    margin-bottom: 16px;
+}
+
+@media (max-width:600px) {
+    .grid {
+        column-count: 1;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+    .grid a {
+        color: #000;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-decoration: none;
+    }
+
+    .grid a span {
+        position: relative;
+        display: block;
+        text-align:center;
+        background-color: rgba(255,201,11,100%);
+        border-radius: 18px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .grid a:hover:before {
+        background: none;
+    }
+}
+
+
+/* schede killer*/
+
+.header2 {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color:rgb(213, 16, 16);
+}
+.bd2 {
+    background: none;
+    box-shadow: none;
+}
+
+.hero {
+    position: relative;
+    border-bottom:8px solid rgba(255,201,11,100%);
+}
+
+.immagine {
+  border-top:50px solid rgba(255,201,11,100%);
+}
+
+.hero img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero .immagine:before {
+    content: "";
+    background-color: rgba(161, 1, 1, 0.400);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    position: absolute;
+    color: rgba(255,201,11,100%);
+    text-align: center;
+    z-index: 50;
+    margin: 0;
+    bottom: 30px;
+    font-size: 70px;
+    letter-spacing: 4px;
+    text-shadow: -3px 0#a7000091, 0 3px #000, 3px 0 #a7000091, 0 3px #000;
+}
+
+.imgschede img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+.imgschede p {
+    text-align: center;
+    font-size: 11pt;
+}
+
+p {
+  font-size: 12pt;
+}
+
+.didascalie p {
+text-align: left;
+padding: 0 30px 0 20px;
+font-size: 11pt;
+}
+
+.imgschede {
+    position: relative;
+    padding: 20px 0;
+}
+
+.m2 {
+max-width: 1000px;
+ margin: auto;
+ padding: 40px 40px 40px 40px;
+}
+
+.m2 img {
+    border-top: 8px solid rgba(255,201,11,100%);
+    border-bottom:8px solid rgba(255,201,11,100%);
+    background-color: rgba(255,201,11,100%);
+}
+
+.imgschede .didascalie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+  footer {
+    padding: 0 0 40px 0;
+}
+
+@media (max-width:700px) {
+  .hero h2  {
+    font-size: 40px;
+    text-align: center;
+    bottom:0;
+  }
+
+.didascalie p {
+   text-align:left;
+   font: 10pt;
+  }
+
+  p {
+    font-size: 11pt;
+  }
+
+  .imgschede p {
+    text-align: center;
+    font-size: 10pt;
+}
+
+}
+
+@media (max-width:400px) {
+  .hero h2  {
+    font-size: 30px;
+    text-align: center;
+    bottom:0;
+  }
+
+  .didascalie p {
+text-align: left;
+font: 10pt;
+  }
+
+  p {
+    font-size: 10pt;
+  }
+
+  .imgschede p {
+    text-align: center;
+    font-size: 9pt;
+}
+
+}
+
+/*aboutus*/
+
+.aboutus {
+  background-color: rgba(213, 16, 16, 83%);
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.aboutus p {
+color:rgb(255, 255, 255);
+}
+
+.m3 {
+  max-width: 1000px;
+ margin: auto;
+ padding: 120px 40px 120px 40px;
+}

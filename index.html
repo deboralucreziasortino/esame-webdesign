@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad(in)ess</title>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">MAD(IN)ESS</a>
+            <div class="dropdown">
+              <button class="dropbtn">Casi risolti
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="tedbundy.html">Ted Bundy</a>
+                <a href="jeffreydahmer.html">Jeffrey Dahmer</a>
+                <a href="edgein.html">Ed Gein</a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Casi irrisolti
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="albertdesalvo.html">Albert De Salvo</a>
+                  <a href="ilmostrodifirenze.html">Il mostro di Firenze</a>
+                  <a href="jacklosquartatore.html">Jack lo Squartatore</a>
+                </div>
+              </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Leggende metropolitane
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="erzsebetbathory.html">Erzsébet Bàthory</a>
+                    <a href="thebunnyman.html">The Bunny man</a>
+                    <a href="sweeneytodd.html">Sweeney Todd</a>
+                  </div>
+                </div>
+            <a href="aboutus.html">About us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+            </nav>
+</header>
+<main>
+    <div class="KILLER">
+       <h1>CASI RISOLTI</h1> 
+       <div class="grid">
+            <a href="tedbundy.html"><img src="immagini/Rectangle 1.png"><span>Ted Bundy</span></a>
+            <a href="jeffreydahmer.html"><img src="immagini/Rectangle 2.png"><span>Jeffrey Dahmer</span></a>
+            <a href="edgein.html"><img src="immagini/Rectangle 3.png"><span>Ed Gein</span></a>
+            </div>
+            <h1>CASI IRRISOLTI</h1>
+            <div class="grid">
+            <a href="albertdesalvo.html"><img src="immagini/Rectangle 4.png"><span>Albert De Salvo</span></a>
+            <a href="ilmostrodifirenze.html"><img src="immagini/Rectangle 5.png"><span>Il mostro di Firenze</span></a>
+            <a href="jacklosquartatore.html"><img src="immagini/Rectangle 6.png"><span>Jack lo Squartatore</span></a>
+        </div>
+        <h1>LEGGENDE METROPOLITANE</h1> 
+        <div class="grid"> 
+        <a href="erzsebetbathory.html"><img src="immagini/Rectangle 7.png"><span>Erzsébet Bàthory</span></a>
+            <a href="thebunnyman.html"><img src="immagini/Rectangle 8.png"><span>The Bunny man</span></a>
+            <a href="sweeneytodd.html"><img src="immagini/Rectangle 9.png"><span>Sweeney Todd</span></a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
