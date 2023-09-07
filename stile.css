@@ -265,7 +265,7 @@ main {
 .text {
     max-width: 1000px;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 40px;
     text-transform: uppercase;
 }
 
@@ -311,7 +311,7 @@ font-size: 11pt;
 .m2 {
 max-width: 1000px;
  margin: auto;
- padding: 50px;
+ padding: 40px;
 }
 
 .m2 img {
