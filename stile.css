@@ -2,7 +2,7 @@ h1, h2 {
     font-family: 'Bayon', sans-serif;
 }
 
-header, main, .header2 {
+header, main, .header2, footer {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
@@ -265,7 +265,7 @@ main {
 .text {
     max-width: 1000px;
     margin: auto;
-    padding: 0 40px;
+    padding: 0 50px;
     text-transform: uppercase;
 }
 
@@ -311,7 +311,7 @@ font-size: 11pt;
 .m2 {
 max-width: 1000px;
  margin: auto;
- padding: 40px 40px 40px 40px;
+ padding: 50px;
 }
 
 .m2 img {
@@ -320,13 +320,28 @@ max-width: 1000px;
     background-color: rgba(255,201,11,100%);
 }
 
+hr {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px 0 10px 0;
+}
+
+.m2 p {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px 0;
+}
+
 .imgschede .didascalie {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-  footer {
-    padding: 0 0 40px 0;
 }
 
 @media (max-width:700px) {
@@ -388,7 +403,7 @@ color:rgb(255, 255, 255);
 }
 
 .m3 {
-  max-width: 1000px;
+  max-width: 700px;
  margin: auto;
  padding: 120px 40px 120px 40px;
 }
